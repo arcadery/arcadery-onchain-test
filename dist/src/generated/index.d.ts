@@ -1,0 +1,17 @@
+import { PublicKey } from '@solana/web3.js';
+export * from './errors';
+export * from './instructions';
+/**
+ * Program address
+ *
+ * @category constants
+ * @category generated
+ */
+export declare const PROGRAM_ADDRESS = "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS";
+/**
+ * Program public key
+ *
+ * @category constants
+ * @category generated
+ */
+export declare const PROGRAM_ID: PublicKey;

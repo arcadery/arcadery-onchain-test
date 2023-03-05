@@ -25,7 +25,7 @@ async function setupPlayer() {
         playerPair,
     };
 }
-(0, tape_1.default)("tx: init game and add player x", async (t) => {
+(0, tape_1.default)("tx: init game and add player", async (t) => {
     // 1. Setup the player and its transaction handler
     const { playerHandler, player, playerPair } = await setupPlayer();
     // 2. Generate public key for our game and derive the game PDA

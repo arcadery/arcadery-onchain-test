@@ -9,8 +9,10 @@
     "build": "rimraf dist && tsc -p tsconfig.json",
     "pretest": "yarn build",
     "test": "tape dist/test/*.js",
-    "t": "esr ./test/tictactoe.ts | tap-spec",
-    "api:gen": "solita"
+    "t": "esr ./test/arcadery.ts | tap-spec",
+    "api:gen": "solita",
+    "amman:start": "DEBUG='amman:(info|error)' amman start",
+    "amman:stop": "amman stop"
   },
   "dependencies": {
     "@metaplex-foundation/beet": "^0.7.1",
@@ -22,6 +24,8 @@
     "@metaplex-foundation/amman-client": "^0.2.2",
     "@metaplex-foundation/solita": "^0.19.0",
     "@types/bn.js": "^5.1.1",
+    "@types/deep-diff": "^1.0.2",
+    "@types/diff": "^5.0.2",
     "@types/node-fetch": "^2.6.2",
     "@types/tape": "^4.13.2",
     "bn.js": "^5.2.1",

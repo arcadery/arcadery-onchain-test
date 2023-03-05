@@ -249,6 +249,16 @@
   dependencies:
     "@types/node" "*"
 
+"@types/deep-diff@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/@types/deep-diff/-/deep-diff-1.0.2.tgz#36f1291f0aead8aceb847cde6f07ae613a78ac4f"
+  integrity sha512-WD2O611C7Oz7RSwKbSls8LaznKfWfXh39CHY9Amd8FhQz+NJRe20nUHhYpOopVq9M2oqDZd4L6AzqJIXQycxiA==
+
+"@types/diff@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.npmjs.org/@types/diff/-/diff-5.0.2.tgz#dd565e0086ccf8bc6522c6ebafd8a3125c91c12b"
+  integrity sha512-uw8eYMIReOwstQ0QKF0sICefSy8cNO/v7gOTiIy9SbwuHyEecJUm7qlgueOO5S1udZ5I/irVydHVwMchgzbKTg==
+
 "@types/node-fetch@^2.6.2":
   version "2.6.2"
   resolved "https://registry.npmjs.org/@types/node-fetch/-/node-fetch-2.6.2.tgz#d1a9c5fd049d9415dce61571557104dec3ec81da"

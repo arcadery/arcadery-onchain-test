@@ -13,7 +13,18 @@ var __createBinding = (this && this.__createBinding) || (Object.create ? (functi
 var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-__exportStar(require("./generated"), exports);
-__exportStar(require("./common/helpers"), exports);
-//# sourceMappingURL=arcadery.js.map
+exports.killStuckProcess = void 0;
+const tape_1 = __importDefault(require("tape"));
+__exportStar(require("./amman"), exports);
+// Due to the web3.js Connection keeping a socket open our process
+// can get stuck for a few seconds.
+// Here we force the process to exit quickly when tests are done.
+function killStuckProcess() {
+    tape_1.default.onFinish(() => process.exit(0));
+}
+exports.killStuckProcess = killStuckProcess;
+//# sourceMappingURL=index.js.map
